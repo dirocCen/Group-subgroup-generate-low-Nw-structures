@@ -33,3 +33,34 @@ considerNw：生成的最大的维克夫位点数的结构
 注：该示例是二元体系的例子，三元及以上的需要修改其中排列组合的部分（不太好写），并且没有特殊限制的话结构数会非常多。
 
 
+
+# （可选）一些额外的脚本
+
+## 仅指定其中一个元素的维克夫位点生成结构
+同样需要先有子群：
+```
+python 1.sage_generate_subgroup.py
+```
+再生成结构
+```
+python generate_structureBysubgroup_one_ele(optional).py
+```
+
+参数说明：
+considerNw：指的是ele1最大维克夫位点数
+
+
+## 根据浓度筛选结构
+需要前面已经生成好"poscar"这个文件夹后，再执行：
+```
+python select_concentration_poscar(optional)
+```
+
+参数说明：
+min_conc：保留的最低浓度
+max_conc：保留的最高浓度
+
+
+
+
+
